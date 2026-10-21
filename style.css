@@ -1,4 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Opcional: evita barras de rolagem indesejadas */
+}
+
 .teste{
     font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-
+}
 
+.container{
+    background-image: url('./liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-width: 100%;
+    height: 100vh;
+    
+}
+
+h1{
+
+    color: aliceblue;
 }
