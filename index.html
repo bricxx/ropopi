@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brombrulone</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Conheça a Equipe</h1>
+        <p>Estudantes, desenvolvedores e criativos construindo soluções.</p>
+    </header>
+
+    <main class="container">
+        <article class="card-pessoa">
+            <h1 class="teste">João/rex</h1>
+            <img src="./Joaozete.jpeg" alt="Joaozete" class="foto-perfil">
+            <p class="bio">Igual trator velho: só pega no tranco! aiiiiiiiiiin</p>
+<a href="joao.html" class="btn-perfil">Status</a>
+        </article>
+
+
+        <article class="card-pessoa">
+            <h1 class="teste">Fessor</h1>
+            <img src="./fessor.webp" alt="fessor" class="foto-perfil">
+            <p class="bio">Desenvolvedor Full-Stack & Especialista em Dados & IA.</p>
+<a href="fessor.html" class="btn-perfil">Status</a>
+        </article>
+
+
+        <article class="card-pessoa">
+            <h1 class="teste">Vitor</h1>
+            <img src="Uras.jpg" alt="Vitor" class="foto-perfil">
+            <p class="bio">Estudante de Ciência da Computação & Artista</p>
+<a href="vitor.html" class="btn-perfil">Status</a>
+        </article>
+    </main>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+<!-- Adiciona isto dentro do teu <div class="container">, logo depois do último cartão -->
+    <article class="card-add" id="btn-abrir-modal">
+        <div class="icone-mais">+</div>
+        <p>Adicionar Perfil</p>
+    </article>
+    
+    <!-- JANELA MODAL (Formulário Flutuante) -->
+    <div id="modal-perfil" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal" id="btn-fechar-modal">&times;</span>
+            <h2>Criar Novo Perfil</h2>
+            
+            <form id="form-perfil">
+                <label for="nome">Nome / Apelido:</label>
+                <input type="text" id="nome" placeholder="Ex: Lucas" required>
+    
+                <label for="status">Biografia / Frase:</label>
+                <input type="text" id="status" placeholder="Ex: Desenvolvedor Front-End" required>
+    
+                <label for="foto">Foto de Perfil:</label>
+                <input type="file" id="foto" accept="image/*" required>
+    
+                <label for="cor">Cor do Perfil:</label>
+                <select id="cor">
+                    <option value="card-roxo">Roxo</option>
+                    <option value="card-verde">Verde</option>
+                    <option value="card-laranja">Laranja</option>
+                </select>
+    
+                <button type="submit" class="btn-salvar">Criar Perfil</button>
+            </form>
+        </div>
+    </div>
