@@ -44,7 +44,8 @@ body {
 }
 
 /* 5. TEXTOS (TÍTULO E BIOGRAFIA) */
-.card-pessoa h1, .card-pessoa h2 {
+.card-pessoa h1,
+.card-pessoa h2 {
   margin: 10px 0 5px 0;
   font-size: 22px;
   color: #ffffff;
@@ -67,7 +68,9 @@ body {
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
-  transition: transform 0.2s, background-color 0.2s;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
 }
 
 .btn-perfil:hover {
@@ -153,7 +156,7 @@ body {
   width: 100%;
   max-width: 400px;
   position: relative;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
@@ -184,7 +187,8 @@ body {
   color: #aaa;
 }
 
-#form-perfil input, #form-perfil select {
+#form-perfil input,
+#form-perfil select {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #444;
@@ -207,4 +211,3 @@ body {
 .btn-salvar:hover {
   background-color: #059669;
 }
-
